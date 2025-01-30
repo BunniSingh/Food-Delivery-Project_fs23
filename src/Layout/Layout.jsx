@@ -32,7 +32,7 @@ const Layout = () => {
         {loginState && <LoginPage/>}
         <Navbar/>
         <Outlet/>
-        {/* <Footer/> */}
+        <Footer/>
     </div>
   )
 }

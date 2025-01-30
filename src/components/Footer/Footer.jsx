@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Footer.Module.css'
+import styles from './Footer.module.css'
 import { assets } from '../../assets/assets'
 
 import { FaFacebook, FaXTwitter, FaInstagram, FaGithub } from "react-icons/fa6";
