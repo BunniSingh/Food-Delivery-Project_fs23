@@ -1,0 +1,134 @@
+
+.container{
+    width: 90%;
+    margin: auto;
+    /* background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); */
+    margin-bottom: 50px;
+    position: relative;
+    animation: fadeIn 1s;
+}
+
+.back-btn{
+    position: relative;
+    top: 20px;
+    color: aliceblue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-btn:hover{
+    background-color: rgb(141, 52, 37);
+}
+
+.back-icon{
+    font-size: max(1vw, 22px);
+}
+
+.place-order-container{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 100px;
+}
+
+
+.left{
+    flex: 1.7;
+    max-width: 600px;
+    width: 100%;
+}
+
+.left h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.left input{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    outline-color: tomato;
+    border-radius: 4px;
+}
+
+.multi-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.right{
+    flex: 1;
+    max-width: 400px;
+    width: 100%;
+}
+
+
+.right-bottom{
+    width: 100%;
+}
+
+.right-bottom video {
+    width: 100%;
+}
+
+
+
+.cart-total-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 15px;
+    color: #555;
+}
+
+.check-out-btn{
+    border: none;
+    background-color: tomato;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.discount{
+    color: green;
+}
+
+.check-out-btn:hover{
+    background-color: rgb(133, 39, 22);
+}
+
+
+@media (max-width : 600px){
+    .container .place-order-container{
+        flex-direction: column;
+    }
+
+    .container .right{
+        max-width: unset;
+    }
+}
+
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

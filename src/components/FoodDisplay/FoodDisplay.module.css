@@ -1,0 +1,44 @@
+.container{
+    margin-top: 30px;
+
+}
+
+.container h2{
+    font-size: max(2vw, 24px);
+    font-weight: 600;
+}
+
+.food-card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+
+.show-more-btn{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+
+.show-more-btn button{
+
+}
+
+
+.show-more-btn button{
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    color: #49557e;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.show-more-btn button:hover{
+    background-color: rgb(214, 203, 189);
+}

@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-family: "Belanosima", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.logo img{
+    width: 40px;
+}
+
+.logo .first{
+    color: tomato;
+}
+
+
+.logo .second{
+    color: rgb(214, 226, 43);
+    font-weight: 500;
+}
+
+.links{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    color: #49557e;
+    font-weight: 500;
+}
+
+.links li{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.links li:hover{
+    color: tomato;
+}
+
+.active{
+    font-weight: bold;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+    
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.icon-btn-div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-btn-div img{
+    width: 24px;
+    cursor: pointer;
+}
+
+.icon-btn-div .cart{
+    position: relative;
+}
+
+.cart .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px ;
+    border-radius: 20px ;
+    top: -8px;
+    right: -8px;
+    background-color: rgb(153, 51, 51);
+}
+
+.btn button {
+    padding: 10px 20px;
+    border: none;
+    border: 1px solid #49557e;
+    border-radius: 50px;
+    color: #49557e;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn button:hover{
+    background-color: rgb(214, 203, 189);
+}
+
+
+@media (max-width: 1050px) {
+    .container .logo{
+        width: 140px;
+    }
+    .container .links{
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .container .btn{
+        gap: 30px;
+
+    }
+
+    .container .btn .icon-btn-div img{
+        width: 22px;
+    }
+    .container .btn button{
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container .logo{
+        width: 100px;
+    }
+    .container .links{
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .container .btn{
+        gap: 20px;
+
+    }
+
+    .container .btn .icon-btn-div img{
+        width: 20px;
+    }
+    .container .btn button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 750px) {
+    
+    .container .links{
+        display: none;
+    }
+
+}

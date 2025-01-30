@@ -1,0 +1,90 @@
+
+
+
+
+
+
+
+
+
+.review-card{
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+    animation: fadeIn 1s;
+
+}
+
+
+.user-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-image: linear-gradient(135deg,#c3cfe2 0%,  #f5f7fa 100%);
+    border-radius: 5px 5px 0 0;
+}
+
+.user{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.name{
+    font-size: max(1vw, 18px);
+    color: #4d4d4d;
+}
+
+.date{
+    font-size: 12px;
+    color: #543c3c;
+    margin-top: 5px;
+}
+
+
+.rating{
+    background-color: #2db82d;
+    color: #fff;
+    display: flex;
+    padding: 2px 5px;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.rating span{
+    font-size: 15px;
+}
+
+.icon{
+    font-size: 12px;
+    transform: translate(2px, 2px);
+}
+
+
+.user-info img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+.review{
+    padding: 10px 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px #a5a5a5 inset;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #1b3e20;
+}
+
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

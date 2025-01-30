@@ -1,0 +1,173 @@
+.container{
+    width: 90%;
+    margin: 100px auto;
+    /* margin-top: 100px; */
+    animation: fadeIn 1s;
+}
+
+.cart-items-title{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    text-align: center;
+    color: gray;
+    font-size: max(1vw, 13px);
+}
+
+#cart-selected-items{
+    color: black;
+    margin: 10px 0;
+}
+
+
+#cart-selected-items img{
+    width: 50px;
+    margin: auto;
+}
+
+.food-item-counter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e3e3e3;
+    /* box-shadow: 0px 0px 10px #676767; */
+    width: 80px;
+    border-radius: 20px;
+    animation: fadeIn 1s;
+    margin: auto;
+}
+
+.add-icon, .remove-icon{
+    width: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.add-icon{
+    color: rgb(101, 179, 101);
+}
+.remove-icon{
+    color: tomato;
+}
+
+
+.container hr{
+    height: 1px;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+.remove-btn{
+    color: rgb(133, 69, 69);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.remove-btn:hover{
+    color: red;
+}
+
+
+.bottom-cart-container{
+    display: flex ;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.total-cart{
+    flex: 1.5;
+}
+
+.cart-total-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 15px;
+    color: #555;
+}
+
+.check-out-btn{
+    border: none;
+    background-color: tomato;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.discount{
+    color: green;
+}
+
+.check-out-btn:hover{
+    background-color: rgb(133, 39, 22);
+}
+
+.cart-promocode{
+    flex: 1;
+}
+
+.cart-promocode p{
+     color: #555;
+     margin-bottom: 10px;
+}
+.cart-promocode div{
+    min-width: 200px;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+     
+}
+
+.cart-promocode div input{
+    padding: 10px 15px;
+    width: 70%;
+    outline: none;
+    border: none;
+    background-color: #eaeaea;
+    border-radius: 20px 0px 0px 20px;
+    font-size: 17px;
+
+}
+.cart-promocode div button{
+    padding: 10px 0px;
+    width: 30%;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: tomato;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.cart-promocode div button:hover{
+    background-color: rgb(133, 39, 22);
+}
+
+
+@media (max-width: 750px) {
+    .container .bottom-cart-container{
+        flex-direction: column;
+        align-items: unset;
+    }
+    
+}
+
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
