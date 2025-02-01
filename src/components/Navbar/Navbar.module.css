@@ -6,7 +6,17 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    transition: 0.3s;
     
+}
+
+.scrolled{
+    background-color: rgb(252, 254, 246);
+    border-radius: 0 0 10px 10px;
 }
 
 .logo{
@@ -57,29 +67,12 @@
     
 }
 
-.btn{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-
-.icon-btn-div{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.icon-btn-div img{
-    width: 24px;
-    cursor: pointer;
-}
-
-.icon-btn-div .cart{
+#cart{
     position: relative;
+    
 }
 
-.cart .dot {
+.dot {
     position: absolute;
     min-width: 10px;
     min-height: 10px ;
@@ -88,6 +81,18 @@
     right: -8px;
     background-color: rgb(153, 51, 51);
 }
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.wish-list-btn{
+    font-size: 25px;
+    color: #49557eb2;
+    cursor: pointer;
+}
+
 
 .btn button {
     padding: 10px 20px;

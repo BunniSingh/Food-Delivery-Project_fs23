@@ -19,9 +19,8 @@ const Layout = () => {
       dispatch(setUserData(userLoginDetails));
     }
     else{
-      dispatch(setLoginState(true));
       setTimeout(() => {
-        dispatch(setLoginState(false));
+        dispatch(setLoginState(true));
       },10_000);
     }
   },[])

@@ -10,6 +10,7 @@ import PlaceOrder from './pages/PlaceOrder/PlaceOrder';
 
 import LoginPage from './components/LoginPage/LoginPage';
 import OrderConfirmation from './components/OrderConfirmation/OrderConfirmation';
+import WishListCart from './components/WishListCart/WishListCart';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: '/confirm_order',
         element: <OrderConfirmation/>
+      },
+      {
+        path: '/wish_list',
+        element: <WishListCart/>
       },
       
     ]
