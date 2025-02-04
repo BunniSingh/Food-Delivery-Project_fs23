@@ -165,10 +165,7 @@
 
 
 @media (min-width: 200px) and (max-width: 750px) {
-    .container{
-        width: 100%;
-        margin: auto;
-    }
+    
     
     .logo{
         margin-left: 40px;
