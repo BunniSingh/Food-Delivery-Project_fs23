@@ -160,6 +160,12 @@
     color: rgb(0, 0, 125);
 }
 
+.error{
+    /* margin: 10px 0; */
+    /* font-size: 20px ; */
+    color: red;
+}
+
 @keyframes fadeIn {
     0%{
         opacity: 0;

@@ -66,11 +66,20 @@
     .container{
         flex-direction: column;
         gap: 1rem;
+        padding: 20px;
     }
 
     .left div{
        display: flex;
        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .container{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 10px;
     }
 }
 
